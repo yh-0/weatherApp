@@ -4,7 +4,7 @@ from .models import City
 from .forms import CityForm
 
 def index(request):
-    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&units={}&appid=6a81c9fabf82d1d0ea5eb40ebcafa130'
+    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&units={}&appid=OPENWEATHER_KEY' #there is supposed to be openweather key
     unit = request.POST.get('unit_select', 'metric')
 
     units_list = {
